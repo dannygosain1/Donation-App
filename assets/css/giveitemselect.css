@@ -5371,6 +5371,10 @@
 	border: none;
 }
 
+.listitem {
+	margin-bottom : 1em;
+	margin-top: 1em;
+}
 
 /*Hover*/
 img:hover{
