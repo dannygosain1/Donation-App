@@ -1666,8 +1666,8 @@
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		color: orange;
+		/*border-bottom: dotted 1px rgba(88, 88, 88, 0.5);*/
 	}
 
 		a:hover {
@@ -2174,7 +2174,7 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-bottom-color: #f2849e;
+			border-bottom-color: orange;
 			box-shadow: inset 0 -1px 0 0 #f2849e;
 		}
 
