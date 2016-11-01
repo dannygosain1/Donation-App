@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ITEM-LOCATION</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/furniture.css">
+		<link rel="stylesheet" href="assets/css/itemlocation.css">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/furniture.js"></script>
+		<script src="assets/js/inputnumber.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<div class="inner">
+		<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="login.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+		<!-- Main -->
+
+			<div id="main">
+				<div class="inner">
+					<header>
+						<h1 class="title">BATHROOM CABINETS</h1>
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+					</header>
+							<!-- Table -->
+
+								<script type="text/javascript">
+									$('#minus').click(function() {
+								    $('#output').html(function(i, val) { return val-1 });
+								});
+
+								$('#plus').click(function() {
+								    $('#output').html(function(i, val) { return val+1 });
+								});
+								</script>
+								
+								<section>
+								
+
+
+
+								<div class="polaroid" align="middle">
+								 	<img src="images/bathroom-cabinets.jpg" width="50%">
+								</div>
+								<br>
+								<p align="middle">This is a Detailed Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+									
+									<h4><b style="color:orange">Requested By: </b>ABC Charity</h4>
+									<h4><b style="color:orange">Address: </b>145 Wellington St, Toronto</h4>
+									<div class="mom">
+										<div class="child" style="align:left">
+											<h4><b style="color:orange">Quantity: </b></h4>
+										</div>
+									<div class="child"><button id="minus" type="button">-</button></div>
+									<div id="output" class="child">&nbsp;&nbsp;<b>1</b>&nbsp;&nbsp;</div>
+									<div class="child"><button id="plus" type="button">+</button></div>
+									<div class="child"><button id="basket" type="button" style="background-color:orange; color:black; margin-left:1em">Add to Basket</button></div>
+									</div>
+
+									<div id="map" align="center">
+										
+									</div>
+									<script>
+									function initMap() {
+								        var position = {lat: 43.645983, lng: -79.385036};
+								        var map = new google.maps.Map(document.getElementById('map'), {
+								          zoom: 4,
+								          center: position
+								        });
+								        var marker = new google.maps.Marker({
+								          position: position,
+								          map: map
+								        });
+								    }
+									</script>
+									<script async defer
+									    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrREZBC_lTMhL4lzLrwtmCGw_MWq0IijA&callback=initMap">
+									</script>
+
+								</section>
+								
+				</div>
+			</div>
+			</div>
+			</header>
+			<section>
+			<div><br><br><br><br><br>
+			</div>
+			</section>
+
+
+		<!-- Footer -->
+			<!-- Footer -->
+						<div class="footerbottom">
+							<table width="100%">
+								<tr>
+									<td width="10%"><span class="image fit"><div><img src="images/nearme.png" alt="" hspace="20"></div></span></td>
+									<td width="10%"><span class="image fit"><div><img src="images/new.png" alt="" hspace="20"></div></span></td>
+									<td width="10%"><span class="image fit"><div><img src="images/by-charity.png" alt="" hspace="20"></div></span></td>
+									<td width="10%"><span class="image fit"><div><img src="images/my-donation.png" alt="" hspace="20"></div></span></td>
+									<td width="10%"><span class="image fit"><div><img src="images/user.png" alt="" hspace="20"></div></span></td>
+								</tr>
+							</table>
+						</div>
+			</footer>
+		</div>
+	</body>
+</html>
