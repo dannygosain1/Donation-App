@@ -177,9 +177,7 @@
 	}
 
 	p {
-		margin: 0 0 0.25em 0;
-		font-style: bold;
-		font-weight: bold;
+		margin: 0 0 1.5em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -194,7 +192,7 @@
 		}
 
 	h1 {
-		font-size: 2em;
+		font-size: 1.85em;
 		letter-spacing: 0.22em;
 		margin: 0 0 0.525em 0;
 	}
@@ -284,8 +282,6 @@
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
-		background: transparent;
-		background-color: transparent;
 	}
 
 		input[type="text"]:invalid,
@@ -310,7 +306,6 @@
 		text-decoration: none;
 		display: block;
 		position: relative;
-		background: transparent;
 	}
 
 		.select-wrapper:before {
@@ -368,7 +363,7 @@
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: black;
+			color: #414f57;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -405,13 +400,13 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			color: black;
+			color: #ff7496;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: black;
+			border-color: #ff7496;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -734,8 +729,19 @@
 		input[type="button"]:hover,
 		button:hover,
 		.signup:hover {
-			border-color: #0c3851;
-			color: #0c3851 !important;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+			-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			display: inline-block;
+			border-color: orange;
+			color: #fff !important;
+			background: orange;
+			font-weight: bold;
 		}
 
 		input[type="submit"].icon,
