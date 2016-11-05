@@ -14,7 +14,7 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/furniture.js"></script>
-		<script src="assets/js/inputnumber.js"></script>
+		<script src="assets/js/incrButton.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	</head>
 	<body>
@@ -46,16 +46,6 @@
 						</nav>
 					</header>
 							<!-- Table -->
-
-								<script type="text/javascript">
-									$('#minus').click(function() {
-								    $('#output').html(function(i, val) { return val-1 });
-								});
-
-								$('#plus').click(function() {
-								    $('#output').html(function(i, val) { return val+1 });
-								});
-								</script>
 								
 								<section>
 								
@@ -74,8 +64,9 @@
 										<div class="child" style="align:left">
 											<h4><b style="color:orange">Quantity: </b></h4>
 										</div>
+
 									<div class="child"><button id="minus" type="button">-</button></div>
-									<div id="output" class="child">&nbsp;&nbsp;<b>1</b>&nbsp;&nbsp;</div>
+									<div id="output" class="child" value="1">&nbsp;&nbsp;<b>1</b>&nbsp;&nbsp;</div>
 									<div class="child"><button id="plus" type="button">+</button></div>
 									</div>
 
@@ -120,11 +111,11 @@
 						<div class="footerbottom">
 							<table>
 								<tr>
-									<td width="20%" style="vertical-align: top; align:center"; "><span class="image fit"><div><img src="images/nearme.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
-									<td width="20%" style="vertical-align: top"><span class="image fit"><div><img src="images/new.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
-									<td width="20%" style="vertical-align: top"><span class="image fit"><div><img src="images/by-charity.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
-									<td width="20%" style="vertical-align: top"><span class="image fit"><div><img src="images/my-donation.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
-									<td width="20%" style="vertical-align: top"><span class="image fit"><div><img src="images/user.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
+									<td width="20%" style="vertical-align: top; align:center" align="center"><span class="image fit"><div><img src="images/nearme.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
+									<td width="20%" style="vertical-align: top" align="center"><span class="image fit"><div><img src="images/new.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
+									<td width="20%" style="vertical-align: top" align="center"><span class="image fit"><div><img src="images/by-charity.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
+									<td width="20%" style="vertical-align: top" align="center"><span class="image fit"><div><img src="images/my-donation.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
+									<td width="20%" style="vertical-align: top" align="center"><span class="image fit"><div><img src="images/user.png" alt="" hspace="20" style="max-width:80px;width:100%"></div></span></td>
 								</tr>
 							</table>
 						</div>

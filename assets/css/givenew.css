@@ -17,9 +17,13 @@
 
 	body {
 		line-height: 1;
-		background-image: url("../../images/background.jpg") !important;
+		background-color: #fff;
+		/*background-image: url("../../images/background.jpg") !important;*/
 		background-repeat: no-repeat !important;
 		height: 100%;
+		bottom:80px;
+		left:0;
+		right:0;
 	}
 
 	ol, ul {
@@ -1637,7 +1641,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #fff;
+		color: #042e99;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -1666,13 +1670,13 @@
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: orange;
-		/*border-bottom: dotted 1px rgba(88, 88, 88, 0.5);*/
+		color: #585858;
+		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #042e99 !important;
 		}
 
 	strong, b {
@@ -2174,7 +2178,7 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-bottom-color: orange;
+			border-bottom-color: #f2849e;
 			box-shadow: inset 0 -1px 0 0 #f2849e;
 		}
 
@@ -3010,7 +3014,7 @@
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: #585858;
+		background: #1a820f;
 		color: #ffffff;
 		cursor: default;
 		visibility: hidden;
@@ -5364,32 +5368,29 @@
 
 /*Little Changes*/
 .title {
-	color: #fff;
+	color: #042e99;
 }
 
 .search{
 	border: none;
 }
 
-.listitem {
-	margin-bottom : 1em;
-	margin-top: 1em;
-}
 
 /*Hover*/
-img:hover{
+/*img:hover{
 	opacity: 1.0;
 	-webkit-filter: grayscale(100%) blur(3px);
 	filter: grayscale(100%) blur(3px);
-	/*-webkit-filter: grayscale(0) blur(0);
+	-webkit-filter: grayscale(0) blur(0);
 	filter: grayscale(0) blur(0);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;*/
+	transition: .3s ease-in-out;
 }
 .hover10 figure:hover img {
 	-webkit-filter: grayscale(100%) blur(3px);
 	filter: grayscale(100%) blur(3px);
-}
+}*/
+
 
 /*Footer menu*/
 .footerbottom{
