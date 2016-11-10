@@ -16,8 +16,62 @@
 		<script src="assets/js/furniture.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	</head>
+	<style>
+		body {margin:0;}
+		ul.topnav {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #042e99;
+		}
+
+		ul.topnav li {float: left;}
+
+		ul.topnav li a {
+		  display: inline-block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  transition: 0.3s;
+		  font-size: 17px;
+		}
+
+		
+		ul.topnav li.icon {display: none;}
+
+		@media screen and (max-width:680px) {
+		  ul.topnav li:not(:first-child) {display: none;}
+		  ul.topnav li.icon {
+		    float: right;
+		    display: inline-block;
+		  }
+		}
+
+		@media screen and (max-width:680px) {
+		  ul.topnav.responsive {position: relative;}
+		  ul.topnav.responsive li.icon {
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		  }
+		  ul.topnav.responsive li {
+		    float: none;
+		    display: inline;
+		  }
+		  ul.topnav.responsive li a {
+		    display: block;
+		    text-align: left;
+		  }
+		}
+	</style>
+
 	<body>
 		<div id="wrapper">
+		<ul class="topnav" id="myTopnav">
+		  <li><a class="active">Application Name + Logo</a></li>
+		</ul>
 			<header id="header">
 				<div class="inner">
 		<!-- Menu -->
@@ -37,7 +91,7 @@
 			<div id="main">
 				<div class="inner">
 					<header>
-						<h1 class="title">BASKET CONFIRMATION</h1>
+						<h1 class="title" style="color:#042e99"">BASKET CONFIRMATION</h1>
 						<nav>
 							<ul>
 								<li><a href="#menu">Menu</a></li>

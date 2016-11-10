@@ -4,7 +4,7 @@
 		<title>Give</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/give.css" />
+		<link rel="stylesheet" href="assets/css/givenew.css" />
 		<link rel="stylesheet" href="assets/css/furniture.css">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -16,10 +16,70 @@
 		<script src="assets/js/furniture.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	</head>
+
+	<style>
+		body {margin:0;}
+		ul.topnav {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #042e99;
+		}
+
+		ul.topnav li {float: left;}
+
+		ul.topnav li a {
+		  display: inline-block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  transition: 0.3s;
+		  font-size: 17px;
+		}
+
+		
+		ul.topnav li.icon {display: none;}
+
+		@media screen and (max-width:680px) {
+		  ul.topnav li:not(:first-child) {display: none;}
+		  ul.topnav li.icon {
+		    float: right;
+		    display: inline-block;
+		  }
+		}
+
+		@media screen and (max-width:680px) {
+		  ul.topnav.responsive {position: relative;}
+		  ul.topnav.responsive li.icon {
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		  }
+		  ul.topnav.responsive li {
+		    float: none;
+		    display: inline;
+		  }
+		  ul.topnav.responsive li a {
+		    display: block;
+		    text-align: left;
+		  }
+		}
+	</style>
+
 	<body>
+
+		
+
 		<div id="wrapper">
+		<ul class="topnav" id="myTopnav">
+		  <li><a class="active">Application Name + Logo</a></li>
+		</ul>
 			<header id="header">
+
 				<div class="inner">
+
 		<!-- Menu -->
 					<nav id="menu">
 						<h2>Menu</h2>
@@ -109,12 +169,12 @@
 					<nav id="sports">
 						<h2>Sports</h2>
 						<ul>
-							<li>Bikes and Accessories</li>
-							<li>Hockey Gear</li>
-							<li>Camping</li>
-							<li>Fitness and Exercise</li>
-							<li>Team Sports Equipment</li>
-							<li>Other</li>
+							<li><a>Bikes and Accessories</a></li>
+							<li><a>Hockey Gear</a></li>
+							<li><a>Camping</a></li>
+							<li><a>Fitness and Exercise</a></li>
+							<li><a>Team Sports Equipment</a></li>
+							<li><a>Other</a></li>
 						</ul>
 					</nav>
 
@@ -142,21 +202,29 @@
 					<table>
 						<tr>
 							<td><input type="text" name="search" id="search" placeholder="Search" /></td>
-							<td width="10%" align="center"><a href="#"><img src="images/searchsymbol.png" width="25px"></a></td>
+							<td width="10%" align="bottom" style="padding-top:10px"><a href="#"><img src="images/searchsymbol copy.png" width="25px"></a></td>
 						</tr>
 					</table>
 					<section>
 						<div class="box alt">
 							<div class="row uniform">
-								<div class="4u"><span class="image fit"><a href="#household"><img src="images/household.jpg" alt=""/></a></span></div>
-								<div class="4u"><span class="image fit"><a href="#clothes"><img src="images/clothes.jpg" alt="" /></a></span></div>
-								<div class="4u$"><span class="image fit"><a href="#food"><img src="images/food.jpg" alt="" /></span></a></div>
-								<div class="4u"><span class="image fit"><a href="#electronics"><img src="images/electronics.jpg" alt="" /></a></span></div>
-								<div class="4u"><span class="image fit"><a href="#furniture"><img src="images/furniture.jpg" alt="" /></a></span></div>
-								<div class="4u$"><span class="image fit"><a href="#bookstoys"><img src="images/bookstoys.jpg" alt="" /></a></span></div>
-								<div class="4u"><span class="image fit"><a href="#sports"><img src="images/sports.jpg" alt="" /></span></a></div>
-								<div class="4u"><span class="image fit"><img src="images/cash.jpg" alt="" /></span></div>
-								<div class="4u$"><span class="image fit"><a href="#other"><img src="images/other.jpg" alt="" /></a></span></div>
+								<div class="4u"><span class="image fit"><a href="#household"><img src="images/household.jpg" onmouseover="this.src='images/household-hover.jpg'" onmouseout="this.src='images/household.jpg'"></a></span></div>
+
+								<div class="4u"><span class="image fit"><a href="#clothes"><img src="images/clothes.jpg" onmouseover="this.src='images/clothes-hover.jpg'" onmouseout="this.src='images/clothes.jpg'"></a></span></div>
+
+								<div class="4u$"><span class="image fit"><a href="#food"><img src="images/food.jpg" onmouseover="this.src='images/food-hover.jpg'" onmouseout="this.src='images/food.jpg'"></span></a></div>
+
+								<div class="4u"><span class="image fit"><a href="#electronics"><img src="images/electronics.jpg" onmouseover="this.src='images/electronics-hover.jpg'" onmouseout="this.src='images/electronics.jpg'"></a></span></div>
+
+								<div class="4u"><span class="image fit"><a href="#furniture"><img src="images/furniture.jpg" onmouseover="this.src='images/furniture-hover.jpg'" onmouseout="this.src='images/furniture.jpg'"></a></span></div>
+
+								<div class="4u$"><span class="image fit"><a href="#bookstoys"><img src="images/bookstoys.jpg" onmouseover="this.src='images/bookstoys-hover.jpg'" onmouseout="this.src='images/bookstoys.jpg'"></a></span></div>
+
+								<div class="4u"><span class="image fit"><a href="#sports"><img src="images/sports.jpg" onmouseover="this.src='images/sports-hover.jpg'" onmouseout="this.src='images/sports.jpg'"></span></a></div>
+
+								<div class="4u"><span class="image fit"><img src="images/cash.jpg" onmouseover="this.src='images/cash-hover.jpg'" onmouseout="this.src='images/cash.jpg'"></span></div>
+
+								<div class="4u$"><span class="image fit"><a href="#other"><img src="images/other.jpg" onmouseover="this.src='images/other-hover.jpg'" onmouseout="this.src='images/other.jpg'"></a></span></div>
 							</div>
 						</div>
 						<br><br>

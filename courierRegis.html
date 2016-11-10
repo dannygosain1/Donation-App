@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Donation-App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/courierRegis.css" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+			<div id="wrapper">
+
+				<!-- Form Area -->
+					<section id="main">
+						<h1 align="left"><strong>REGISTER AS A DRIVER WITH US</strong></h1>
+						<form method="post" action="#"> <!-- Action determines what happens after hitting login button -->
+							<!-- Form entries (input and password) -->
+							<table width="100%">
+							<tr>
+							<td><div class="field">
+								<input type="email" name="email" id="email" placeholder="First Name" />
+							</div></td>
+							<td style="padding-left:0.5em"><div class="field">
+								<input type="email" name="email" id="email" placeholder="Last Name" />
+							</div></td>
+							</tr>
+							</table><br>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="Phone" />
+							</div>
+							<div class="field">
+								<input type="password" name="password" id="password" placeholder="Create Password" />
+							</div>
+							<div class="field">
+								<div class="select-wrapper">
+									<select name="region" id="department">
+										<option value="">Select Region</option>
+										<option value="null">Toronto DT</option>
+										<option value="sales">Peel</option>
+										<option value="tech">North York</option>
+										<option value="null">Oshawa</option>
+									</select>
+								</div>
+							</div>
+							<div class="field">
+								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+							</div>
+						</form>
+						<hr />
+						
+						<footer>
+							<ul class="actions">
+								<li style="align:middle"><a href="courierRegis2.html" class="signup">Become a Driver...</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Include Copyright Information</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>

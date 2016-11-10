@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/furniture.css">
 		<link rel="stylesheet" href="assets/css/itemlocation.css">
+
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -17,8 +18,62 @@
 		<script src="assets/js/incrButton.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	</head>
+	<style>
+		body {margin:0;}
+		ul.topnav {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #042e99;
+		}
+
+		ul.topnav li {float: left;}
+
+		ul.topnav li a {
+		  display: inline-block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  transition: 0.3s;
+		  font-size: 17px;
+		}
+
+		
+		ul.topnav li.icon {display: none;}
+
+		@media screen and (max-width:680px) {
+		  ul.topnav li:not(:first-child) {display: none;}
+		  ul.topnav li.icon {
+		    float: right;
+		    display: inline-block;
+		  }
+		}
+
+		@media screen and (max-width:680px) {
+		  ul.topnav.responsive {position: relative;}
+		  ul.topnav.responsive li.icon {
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		  }
+		  ul.topnav.responsive li {
+		    float: none;
+		    display: inline;
+		  }
+		  ul.topnav.responsive li a {
+		    display: block;
+		    text-align: left;
+		  }
+		}
+	</style>
+
 	<body>
 		<div id="wrapper">
+		<ul class="topnav" id="myTopnav">
+		  <li><a class="active">Application Name + Logo</a></li>
+		</ul>
 			<header id="header">
 				<div class="inner">
 		<!-- Menu -->
@@ -38,7 +93,7 @@
 			<div id="main">
 				<div class="inner">
 					<header>
-						<h1 class="title">BATHROOM CABINETS</h1>
+						<h1 class="title" style="color:#042e99">BATHROOM CABINETS</h1>
 						<nav>
 							<ul>
 								<li><a href="#menu">Menu</a></li>
@@ -49,25 +104,43 @@
 								
 								<section>
 								
+								<script>
+									function incrementValue()
+									{
+									    var value = parseInt(document.getElementById('number').value, 10);
+									    value = isNaN(value) ? 0 : value;
+									    value++;
+									    document.getElementById('number').value = value;
+									}
 
+									function dencrementValue()
+									{
+									    var value = parseInt(document.getElementById('number').value, 10);
+									    value = isNaN(value) ? 0 : value;
+									    value--;
+									    document.getElementById('number').value = value;
+									}
+
+
+								</script>
 
 
 								<div class="polaroid" align="middle">
 								 	<img src="images/bathroom-cabinets.jpg" width="50%">
 								</div>
 								<br>
-								<p align="middle">This is a Detailed Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+								<p align="middle" style="color:#042e99">This is a Detailed Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 									
-									<h4><b style="color:orange">Requested By: </b>ABC Charity</h4>
-									<h4><b style="color:orange">Address: </b>145 Wellington St, Toronto</h4>
+									<h4><b style="color:orange">Requested By: </b><font color="#042e99">ABC Charity</font></h4>
+									<h4><b style="color:orange">Address: </b><font color="#042e99">145 Wellington St, Toronto</font></h4>
 									<div class="mom">
 										<div class="child" style="align:left">
 											<h4><b style="color:orange">Quantity: </b></h4>
 										</div>
 
-									<div class="child"><button id="minus" type="button">-</button></div>
-									<div id="output" class="child" value="1">&nbsp;&nbsp;<b>1</b>&nbsp;&nbsp;</div>
-									<div class="child"><button id="plus" type="button">+</button></div>
+									<div class="child"><button id="minus" type="button" onclick="decrementValue()" value="Decrement Value">-</button></div>
+									<input type="text" id="number" class="child" value="1" style="padding-left:0.4em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<div class="child"><button id="plus" type="button" onclick="incrementValue()" value="Increment Value">+</button></div>
 									</div>
 
 									<div class="mom">

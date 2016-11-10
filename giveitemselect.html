@@ -4,7 +4,7 @@
 		<title>GIVE-ITEM-SELECT</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/give.css" />
+		<link rel="stylesheet" href="assets/css/givenew.css" />
 		<link rel="stylesheet" href="assets/css/furniture.css">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -16,8 +16,63 @@
 		<script src="assets/js/furniture.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	</head>
+
+	<style>
+		body {margin:0;}
+		ul.topnav {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #042e99;
+		}
+
+		ul.topnav li {float: left;}
+
+		ul.topnav li a {
+		  display: inline-block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  transition: 0.3s;
+		  font-size: 17px;
+		}
+
+		
+		ul.topnav li.icon {display: none;}
+
+		@media screen and (max-width:680px) {
+		  ul.topnav li:not(:first-child) {display: none;}
+		  ul.topnav li.icon {
+		    float: right;
+		    display: inline-block;
+		  }
+		}
+
+		@media screen and (max-width:680px) {
+		  ul.topnav.responsive {position: relative;}
+		  ul.topnav.responsive li.icon {
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		  }
+		  ul.topnav.responsive li {
+		    float: none;
+		    display: inline;
+		  }
+		  ul.topnav.responsive li a {
+		    display: block;
+		    text-align: left;
+		  }
+		}
+	</style>
+
 	<body>
 		<div id="wrapper">
+		<ul class="topnav" id="myTopnav">
+		  <li><a class="active">Application Name + Logo</a></li>
+		</ul>
 			<header id="header">
 				<div class="inner">
 		<!-- Menu -->
@@ -37,7 +92,7 @@
 			<div id="main">
 				<div class="inner">
 					<header>
-						<h1 class="title">BATHROOM SUPPLIES</h1>
+						<h1 class="title" style="color:#042e99">BATHROOM SUPPLIES</h1>
 						<nav>
 							<ul>
 								<li><a href="#menu">Menu</a></li>
@@ -47,7 +102,7 @@
 					
 							<!-- Table -->
 								<section>
-									<h2>Items Requested</h2>
+									<h2 style="color:grey">Items Requested</h2>
 									<div class="table-wrapper">
 										<table>
 											<thead>
@@ -55,9 +110,9 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td style="vertical-align:middle">Bathroom Cabinets<br><b>XYZ Charity - Toronto</b></td>
+													<td style="vertical-align:middle" >Bathroom Cabinets<br><b>XYZ Charity - Toronto</b></td>
 													<td style="vertical-align:middle">NEW</td>
-													<td style="vertical-align:middle; color:orange"><a href="itemlocation.html"><div style="height:100%;width:100%;color:#0d2c54">4 Items</div></a></td>
+													<td style="vertical-align:middle; color:orange"><a href="itemlocation.html"><div style="height:100%;width:100%;color:#0d2c54">4 Items</div></td></a>
 												</tr>
 												<tr>
 													<td style="vertical-align:middle">Toilet Paper<br><b>XYZ Charity - Toronto</b></td>
